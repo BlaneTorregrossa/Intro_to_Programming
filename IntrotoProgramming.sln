@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IntrotoProgramming", "IntrotoProgramming\IntrotoProgramming.vcxproj", "{901E6377-F83A-407B-95BB-4435F22374F3}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Variables", "Variables\Variables.vcxproj", "{BF91BA03-A4AB-4CFB-9946-D6814D92E3D6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Conditional Statements", "Conditional Statements\Conditional Statements.vcxproj", "{4AEA2D02-B959-49BB-9BB3-AC7AEE64EFF7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoopsE", "LoopsE\LoopsE.vcxproj", "{6A750DD7-9A0B-460E-BE70-0F91799DA605}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,22 @@ Global
 		{BF91BA03-A4AB-4CFB-9946-D6814D92E3D6}.Release|x64.Build.0 = Release|x64
 		{BF91BA03-A4AB-4CFB-9946-D6814D92E3D6}.Release|x86.ActiveCfg = Release|Win32
 		{BF91BA03-A4AB-4CFB-9946-D6814D92E3D6}.Release|x86.Build.0 = Release|Win32
+		{4AEA2D02-B959-49BB-9BB3-AC7AEE64EFF7}.Debug|x64.ActiveCfg = Debug|x64
+		{4AEA2D02-B959-49BB-9BB3-AC7AEE64EFF7}.Debug|x64.Build.0 = Debug|x64
+		{4AEA2D02-B959-49BB-9BB3-AC7AEE64EFF7}.Debug|x86.ActiveCfg = Debug|Win32
+		{4AEA2D02-B959-49BB-9BB3-AC7AEE64EFF7}.Debug|x86.Build.0 = Debug|Win32
+		{4AEA2D02-B959-49BB-9BB3-AC7AEE64EFF7}.Release|x64.ActiveCfg = Release|x64
+		{4AEA2D02-B959-49BB-9BB3-AC7AEE64EFF7}.Release|x64.Build.0 = Release|x64
+		{4AEA2D02-B959-49BB-9BB3-AC7AEE64EFF7}.Release|x86.ActiveCfg = Release|Win32
+		{4AEA2D02-B959-49BB-9BB3-AC7AEE64EFF7}.Release|x86.Build.0 = Release|Win32
+		{6A750DD7-9A0B-460E-BE70-0F91799DA605}.Debug|x64.ActiveCfg = Debug|x64
+		{6A750DD7-9A0B-460E-BE70-0F91799DA605}.Debug|x64.Build.0 = Debug|x64
+		{6A750DD7-9A0B-460E-BE70-0F91799DA605}.Debug|x86.ActiveCfg = Debug|Win32
+		{6A750DD7-9A0B-460E-BE70-0F91799DA605}.Debug|x86.Build.0 = Debug|Win32
+		{6A750DD7-9A0B-460E-BE70-0F91799DA605}.Release|x64.ActiveCfg = Release|x64
+		{6A750DD7-9A0B-460E-BE70-0F91799DA605}.Release|x64.Build.0 = Release|x64
+		{6A750DD7-9A0B-460E-BE70-0F91799DA605}.Release|x86.ActiveCfg = Release|Win32
+		{6A750DD7-9A0B-460E-BE70-0F91799DA605}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
