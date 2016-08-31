@@ -46,7 +46,49 @@
 
 
 //Comditional Statements Exercise 3
-//(Come back when loops are done.)
+//Description:Takes five numbers and if the numbers have a positive sum it displays the numbers in ascending order and if the numbers are negative it does the opposite. If the sum equals zero it displays the numbers in the order they were entered.
+
+//#include <iostream>
+
+//int main()
+//{
+//	int sum;
+//	int resulta;
+//	int resultb;
+//	int resultc;
+//	int resultd;
+//	int resulte;
+//	int tmp;
+//	for (int i = 0; i <= 5; i++)
+//	{
+//		tmp = i;
+//		resulta = tmp;
+//		resultb = resulta;
+//		resultc = resultb;
+//		resultd = resultc;
+//		resulte = resultd;
+//		sum = resulta + resultb + resultc + resultd + resulte;
+//		if (sum == 0)
+//		{
+//			std::cout << i << std::endl;
+//		}
+//		else if (sum > 0)
+//		{
+//			std::cout << i << std::endl;
+//		}
+//		else if (sum < 0)
+//		{
+//			for (int b = 5; b > 0; b--)
+//			std::cout << b << std::endl;
+//			break;
+//		}
+
+		
+//	}
+//	system("pause");
+//	return 0;
+
+//}
 
 
 //Conditinal Statements Exercise 4
