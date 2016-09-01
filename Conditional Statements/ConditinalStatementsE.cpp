@@ -59,7 +59,7 @@
 //	int resultd;
 //	int resulte;
 //	int tmp;
-//	for (int i = 0; i <= 5; i++)
+//	for (int i = 1; i <= 5; i++)
 //	{
 //		tmp = i;
 //		resulta = tmp;
@@ -79,9 +79,13 @@
 //		else if (sum < 0)
 //		{
 //			for (int b = 5; b > 0; b--)
-//			std::cout << b << std::endl;
+//				std::cout << b << std::endl;
 //			break;
 //		}
+//	}
+//	system("pause");
+//	return 0;
+//}
 
 		
 //	}

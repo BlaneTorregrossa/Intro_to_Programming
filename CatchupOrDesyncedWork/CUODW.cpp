@@ -80,7 +80,10 @@ void main()
 	int inputData[10]{ inputa, inputb, inputc, inputd, inpute, inputf, inputg, inputh, inputi, inputj };
 	for (int i = 10; i >= 0; i--)
 	{
-		switch()
+		if (inputa > inputa, inputb, inputc, inputd, inpute, inputf, inputg, inputh, inputi, inputj)
+		{
+
+		}
 	}
 	system("pause");
 }
