@@ -74,49 +74,12 @@ int main()
 	std::cout << "Best of 3 rounds.  If you and your opponent tie the round resets." << std::endl;
 	system("pause");
 	system("cls");
-	std::cout << "Please choose Rock (r), Paper(p), or Scissors(s)... " << std::endl;
+	std::cout << "Please choose Rock (r), Paper (p), or Scissors (s)... " << std::endl;
 	std::cin >> input;
 
-	while (input > 0)
-	{
-		switch (input)
-		{
-		case 1:
-			std::cout << "Rock has been selected" << std::endl;
-		}
-		switch (input)
-		{
-		case 2:
-			std::cout << "Paper has been selected" << std::endl;
-		}
-		switch (input)
-		{
-		case 3:
-			std::cout << "Scissors has been selected" << std::endl;
-		}
-		if (input > 0 && input == r && input < 4)
-		{
-			std::cout << "1st Round goes to..." << std::endl;
-			system("pause");
-			std::cout << "YOU!!!!!" << std::endl;
-		}
-		else if (input > 0 && input == p && input < 4)
-		{
-			std::cout << "1st Round goes to..." << std::endl;
-			system("pause");
-			std::cout << "YOUR OPPONENT!!!!!" << std::endl;
-		}
-		else if (input == s)
-		{
-			std::cout << "It is a tie..." << std::endl;
-			system("pause");
-		}
-		else
-		{
-			std::cout << "You have entered a number that is not valid. Please try again." << std::endl;
-			system("pause");
-		}
-	}
+	
+
+
 	system("pause");
 	return 0;
 }
