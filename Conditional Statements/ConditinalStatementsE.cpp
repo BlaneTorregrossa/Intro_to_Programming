@@ -59,39 +59,22 @@
 //	int resultd;
 //	int resulte;
 //	int tmp;
-//	for (int i = 1; i <= 5; i++)
-//	{
-//		tmp = i;
-//		resulta = tmp;
-//		resultb = resulta;
-//		resultc = resultb;
-//		resultd = resultc;
-//		resulte = resultd;
+//	std::cin >> resulta, resultb, resultc, resultd, resulte;
 //		sum = resulta + resultb + resultc + resultd + resulte;
+//		if (sum < 0)
+//		{
+//			std::cout << i << std::endl;
+//		}
+//		if (sum > 0)
+//		{
+//			std::cout << i << std::endl;
+//		}
 //		if (sum == 0)
 //		{
-//			std::cout << i << std::endl;
+//			std::cout << resulta, resultb, resultc, resultd, resulte;
 //		}
-//		else if (sum > 0)
-//		{
-//			std::cout << i << std::endl;
-//		}
-//		else if (sum < 0)
-//		{
-//			for (int b = 5; b > 0; b--)
-//				std::cout << b << std::endl;
-//			break;
-//		}
-//	}
 //	system("pause");
 //	return 0;
-//}
-
-		
-//	}
-//	system("pause");
-//	return 0;
-
 //}
 
 

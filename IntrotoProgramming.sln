@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IntrotoProgramming", "IntrotoProgramming\IntrotoProgramming.vcxproj", "{901E6377-F83A-407B-95BB-4435F22374F3}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClassPracticeStuff", "ClassPracticeStuff\ClassPracticeStuff.vcxproj", "{D2667EE2-84ED-41DF-9B27-6B8044D73A8D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FourMinigameProject", "FourMinigameProject\FourMinigameProject.vcxproj", "{CF47A360-D02C-426C-9E6F-1CBA3C628493}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays", "Arrays\Arrays.vcxproj", "{5CA0C95D-CADE-4B48-89EF-793E9C0BAA1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,14 @@ Global
 		{CF47A360-D02C-426C-9E6F-1CBA3C628493}.Release|x64.Build.0 = Release|x64
 		{CF47A360-D02C-426C-9E6F-1CBA3C628493}.Release|x86.ActiveCfg = Release|Win32
 		{CF47A360-D02C-426C-9E6F-1CBA3C628493}.Release|x86.Build.0 = Release|Win32
+		{5CA0C95D-CADE-4B48-89EF-793E9C0BAA1F}.Debug|x64.ActiveCfg = Debug|x64
+		{5CA0C95D-CADE-4B48-89EF-793E9C0BAA1F}.Debug|x64.Build.0 = Debug|x64
+		{5CA0C95D-CADE-4B48-89EF-793E9C0BAA1F}.Debug|x86.ActiveCfg = Debug|Win32
+		{5CA0C95D-CADE-4B48-89EF-793E9C0BAA1F}.Debug|x86.Build.0 = Debug|Win32
+		{5CA0C95D-CADE-4B48-89EF-793E9C0BAA1F}.Release|x64.ActiveCfg = Release|x64
+		{5CA0C95D-CADE-4B48-89EF-793E9C0BAA1F}.Release|x64.Build.0 = Release|x64
+		{5CA0C95D-CADE-4B48-89EF-793E9C0BAA1F}.Release|x86.ActiveCfg = Release|Win32
+		{5CA0C95D-CADE-4B48-89EF-793E9C0BAA1F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

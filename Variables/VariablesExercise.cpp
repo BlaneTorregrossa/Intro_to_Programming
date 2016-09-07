@@ -43,12 +43,12 @@
 //	std::cout << "a" << std::endl << a << std::endl << "b" << std::endl << b;
 //	std::cin.get();
 //	system("pause");
-	
+
 //	{
 //		tmp = a;
 //		a = b;
 //		b = tmp;
-		
+
 //	}
 //	std::cout << "a" << std::endl << a << std::endl << "b" << std::endl << b;
 //	std::cin.get();
@@ -96,3 +96,19 @@
 //	}
 //}
 
+
+//Exercise 7
+//Description: Takes two letters and outputs the middle number.
+//#include <iostream>
+//int main()
+//{
+//	char a;
+//	char b;
+//	char inbetween;
+//	std::cout << "Please insert either the capital or lowercase letters of (a-z) to get the letter in the middle." << std::endl;;
+//	std::cin >> a >> b;
+//	inbetween = (a + b) / 2;
+//	std::cout << "The middle letter is... " << inbetween << std::endl;
+//	system("pause");
+//	return 0;
+//}
