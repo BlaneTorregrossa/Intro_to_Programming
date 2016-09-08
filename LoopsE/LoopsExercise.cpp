@@ -206,7 +206,6 @@
 //}
 
 //Description: Loads numbers 0-1000 that are multiples of 3 or 5 and adds them together which is displayed at the end of the list.
-
 //#include <iostream>
 //int main()
 //{
