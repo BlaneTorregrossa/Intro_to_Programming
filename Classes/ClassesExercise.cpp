@@ -2,27 +2,25 @@
 
 #include <iostream>
 
-class Zombie
+class Zambie
 {
-
-
-
 private:
 
-	float zHealth, zdHealth;
-	float zAttack, zdAttack;
-	float zPreviousLife, zdPreviousLife;
+	int zambieHealth;
+	int zambieAttack;
+	char prevOccupattion;
+
 
 public:
-
-	void setZombieHealth(float zHealth)
+	int getHealth()
 	{
-		if (zHealth == 100.0f)
-			zdHealth = 50.0f;
-		else
-			zdHealth = zHealth;
+		return zambieHealth;
 	}
-
+	int setHealth(int health = 100)
+	{
+		zambieHealth = health;
+	}
+	int getAttack
 };
 
 
