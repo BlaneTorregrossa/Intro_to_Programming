@@ -48,7 +48,7 @@ struct Player
 int playerFunction()
 {
 	Player input;
-
+	int playerLoop[5] = { 1, 2, 3, 4, 5 };
 	std::cout << "Please decide on the score the player deserves..." << std::endl;
 	std::cin >> input.score;
 	system("cls");
@@ -64,7 +64,6 @@ int playerFunction()
 //Need to figure out how to get the array to work with functions and loop
 int main()
 {
-	int playerLoop[5] = { 1, 2, 3, 4, 5 };
 	std::cout << playerFunction();
 	return 1;
 }
