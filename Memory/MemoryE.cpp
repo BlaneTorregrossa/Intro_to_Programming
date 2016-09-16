@@ -94,11 +94,45 @@
 //}
 
 
+
+
 // Pointers to Memory 6
+//A.Write a function RevString(char* array) which reverses array. The function returns nothing.
+//B.Write a function CountEven(int* array, int array_len) which receives an integer array and its size, and returns the number of even numbers in the array.
+//C.Write a function Maximum(double* array, int array_size) that returns a pointer to the maximum value of an array of doubles.If the array is empty, return nullptr.
+//D.Write a function Contains(char* array, char search_value) which returns true if the 1st parameter contains the 2nd parameter, or false otherwise.
+
+#include <iostream>
 
 int RevString(char* array)
 {
+	char revArray[3]{ 'A', 'B', 'C' };
+	char* revPtr = &revArray[0];
+	char revTemp;
 
-	char ptr;
-	char temp;
+	revTemp = revArray[0];
+	revTemp = *(revArray + 1);
+	revTemp = *(revPtr + 1);
+	revTemp = *revPtr;
+
+
+	revPtr = revArray + 1;
+	revTemp = *revPtr;
+	revTemp = *(revPtr + 1);
+
+	revTemp = *++revPtr;
+	revTemp = ++*revPtr;
+	revTemp = *revPtr++;
+	revTemp = *revPtr;
+
+
+
+	return 0;
+
+}
+
+int main()
+{
+	int Reverse = RevString('A');
+	system("pause");
 }

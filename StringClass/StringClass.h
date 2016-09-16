@@ -13,16 +13,25 @@
 //Find a sub-string within the string class, starting from a certain index within the string.
 //Replace a sub-string found within the string with a different sub-string.
 //Set the string to an input C-style string.
+#ifndef _StringClass_H_
+#define _StringClass_H_
 
-#include "StringClass.h"
-#include <iostream>
-
-
-
-int main()
+class String
 {
+public:
+	
+
+
+private:
+	int transfer;
+	int subStringSwitch;
+	int activate;
+	bool running;
 
 
 
-}
 
+};
+
+
+#endif

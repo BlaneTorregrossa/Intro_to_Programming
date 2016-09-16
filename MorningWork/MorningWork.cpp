@@ -1,18 +1,18 @@
-//Description:: A function that takes three numbers and then multiplies the sum of the numbers by five.
-
+//Description: A function that takes two parameters a pointer to an array and the number of elements then populate the array with all even numbers.
+//Needs a loop
 #include <iostream>
 
-int threeNumbers()
+int morningFunction(int evenNumArray)
 {
-	int numA = 25;
-	float numB = 2.896;
-	float numC = 7.104;
-	int sum;
-	int finalResult;
-	sum = numA + numB + numC;
-	finalResult = sum * 5;
-	std::cout << "The final result is " << finalResult << std::endl;
-	system("pause");
-}
+	int evenNumbers[3]{ 10, 20, 30 };
+	int ptr = evenNumbers[0];
+	int tempa;
 
+	tempa = evenNumbers[0];
+	tempa = *(evenNumbers + 3);
+	tempa = *(evenNumbers + 2);
+	tempa = *(evenNumbers + 1);
+	tempa = (ptr);
+
+}
 

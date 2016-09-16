@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E2066AA3-24C5-477D-B528-AF85F6087915}</ProjectGuid>
-    <RootNamespace>Classes</RootNamespace>
+    <ProjectGuid>{D388D54C-81EC-4A75-BA57-55A6E1FEEF17}</ProjectGuid>
+    <RootNamespace>PRactice</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,10 +110,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ClassesExercise.cpp" />
+    <ClCompile Include="PRacticing.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClassesHeader.h" />
+    <ClInclude Include="Practice.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ClassesExercise.cpp">
+    <ClCompile Include="PRacticing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClassesHeader.h">
+    <ClInclude Include="Practice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
