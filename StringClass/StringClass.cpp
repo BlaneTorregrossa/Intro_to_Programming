@@ -3,6 +3,7 @@
 #include "StringClass.h"
 #include <iostream>
 
+//Prototype your functions...
 
 // how to properly get char information into the main function without problems
 int main()
@@ -46,7 +47,12 @@ void StringClassA::CharIndex() //acsessing character index
 	nameA[8];
 }
 
-//Comparison of a string to see if it is the same as another string classs
+//Comparison of a string to see if it is the same as another string classes. Try using duplicators.
+void StringClassA::Comparing()
+{
+	
+}
+
 
 //Apenindng a string
 

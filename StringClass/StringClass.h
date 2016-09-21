@@ -1,4 +1,4 @@
-
+//Comment what all this means...
 
 #ifndef _StringClass_H_
 #define _StringClass_H_
@@ -12,6 +12,7 @@ public:
 	void CharIndex();
 	void DuplicateLowerCase();
 	void DuplicateUpperCase();
+	void Comparing();
 
 
 private:
