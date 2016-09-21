@@ -1,37 +1,41 @@
-//Creating a string class.
-//Include comments that describes how the program works.
-//This string class needs to:
-//Query the string's length and return an interger.
-//Access a character at a certain index within the string class.
-//Compare if the string is the same as another string class.
-//Append one string to another.
-//Prepend one string to another.
-//Return the string as a basic constant C-style string (const char*).
-//Convert the string to a duplicate containing all lowercase letters.
-//Convert the string to a duplicate containing all uppercase letters.
-//Find a sub-string within the string class.
-//Find a sub-string within the string class, starting from a certain index within the string.
-//Replace a sub-string found within the string with a different sub-string.
-//Set the string to an input C-style string.
+
+
 #ifndef _StringClass_H_
 #define _StringClass_H_
+#include <iostream>
 
-class String
+//The first of two string classes
+//Contains an Array counter, two arrays, and a way to interact with StringClassB.
+class StringClassA
 {
 public:
+	StringClassA(char aa, char ab);
+	void ArrayCount();
+	void StringCompare(int compareA);
+	StringClassB* findStringClassB();
 	
 
 
+
 private:
-	int transfer;
-	int subStringSwitch;
-	int activate;
-	bool running;
-
-
-
-
+	StringClassB* B;
+	char ArrayA[7] = "sample";
+	char nameA[8] = "stringA";
 };
 
 
+
+//The second string class
+//Contains a single Array and a way to interact with StringClassA
+class StringClassB
+{
+public:
+	StringClassB(char ba);
+	StringClassA* findStringClassA();
+
+private:
+	StringClassA* A;
+	char nameB[8] = "StringB";
+	
+};
 #endif

@@ -1,18 +1,4 @@
-//Creating a string class.
-//Include comments that describes how the program works.
-//This string class needs to:
-//Query the string's length and return an interger.
-//Access a character at a certain index within the string class.
-//Compare if the string is the same as another string class.
-//Append one string to another.
-//Prepend one string to another.
-//Return the string as a basic constant C-style string (const char*).
-//Convert the string to a duplicate containing all lowercase letters.
-//Convert the string to a duplicate containing all uppercase letters.
-//Find a sub-string within the string class.
-//Find a sub-string within the string class, starting from a certain index within the string.
-//Replace a sub-string found within the string with a different sub-string.
-//Set the string to an input C-style string.
+
 
 #include "StringClass.h"
 #include <iostream>
@@ -21,8 +7,67 @@
 
 int main()
 {
-
-
-
+	int i = 5;
+	StringClassA stringclassa = StringClassA(7, 8);
+	StringClassB stringclassb = StringClassB(8);
+	stringclassa.ArrayCount;
+	return 1;
 }
+
+StringClassA::StringClassA(char aa, char ab) //Function fors String class A
+{
+
+	ArrayA[7] = aa;
+	nameA[8] = ab;
+}
+
+
+
+StringClassB::StringClassB(char ba) //Function for string class B
+{
+	nameB[8] = ba;
+}
+
+
+
+
+
+
+void StringClassA::ArrayCount() //Fuction for counting a strings length and returning a value
+{
+	strlen(ArrayA);
+}
+
+
+
+
+//I feel as if I am misinterpeting the instructions between the meaning of string and string class.
+//I do not understand how to get two classes to swap information with or without pointers.
+//I do not understand how to convert information and change it for a duplicate class.
+//I do not understand how to make a sub-string within the string class.
+//I am aware of functions string length, compare, and copy.
+
+
+//StringClassB appending itself to StringClassA
+StringClassB * StringClassA::findStringClassB()
+{
+	return nullptr;
+}
+
+
+
+//StringClassA appending itself to StringClassB
+StringClassA * StringClassB::findStringClassA()
+{
+	return nullptr;
+}
+
+
+
+//I do not understand how to get two classes to interact with each other for comparison.
+void StringClassA::StringCompare(int compareA)
+{
+	
+}
+
 

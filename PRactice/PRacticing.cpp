@@ -14,7 +14,7 @@ Player::Player(int H, int S, bool P)
 {
 	Health = H;
 	Score = S;
-	Playing = P
+	Playing = P;
 }
 
 void Player::ScoreUp(int amount)
