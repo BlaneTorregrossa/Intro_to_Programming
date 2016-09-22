@@ -4,7 +4,7 @@
 
 int main()
 {
-	StringClass String = StringClass(32);
+	StringClass String = StringClass(48);
 	String.StringCounter(0);
 }
 

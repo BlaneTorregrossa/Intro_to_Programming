@@ -18,7 +18,7 @@ int StringClass::StringCounter(int Count)
 	name[32] = Count;
 	if (name[32] == Count) // Is this if statement even necessary?
 	{
-	// Come up with a loop to count the strings lemgth 
+		//Try using a loop here.
 	}
 
 }
@@ -30,5 +30,5 @@ int StringClass::StringCounter(int Count)
 
 //List questions and problems you do not understand.
 //Are both .cpp files aware of each other and the header? What is the order in which these files interact.
-//could a loop be used in the middle of an if statement.
+//Could a loop be used in the middle of an if statement.
 //How do I make the intergers for the function assign correctly.
