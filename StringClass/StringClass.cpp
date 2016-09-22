@@ -8,11 +8,8 @@
 
 StringClassA::StringClassA()
 {
-	int search;
+
 	char ArrayA[] = "sample";
-	char *ArrayAAcess[sizeof(ArrayA)]; 
-	for (search = 0; search < sizeof(ArrayA); search++)
-		ArrayAAcess[search] = &ArrayA[search];
 	char nameA[] = "StringA";
 	char nameADupA[] = "Dup";
 	char nameADupB[] = "Dup2";
