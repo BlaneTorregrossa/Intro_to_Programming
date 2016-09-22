@@ -111,6 +111,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="StringClass.cpp" />
+    <ClCompile Include="StringClassMain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StringClass.h" />
