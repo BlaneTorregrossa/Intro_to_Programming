@@ -3,47 +3,22 @@
 #ifndef _StringClass_H_
 #define _StringClass_H_
 #include <iostream>
+// This is where the prototyping of funtions happens...
 
-class StringClassA
+
+class StringClass // Only one string class needed Will need to make multiple instances of this class.
 {
 public:
-	StringClassA();
-	StringClassA(int aa, int ab);
-	void ArrayCount();
-	void CharIndex();
-	void DuplicateLowerCase();
-	void DuplicateUpperCase();
-	void Comparing();
+	StringClass(int a);
+	int StringCounter(int Count);
+
+	
 
 
 private:
 	
-	char ArrayA[7];
-	char nameA[8];
-	char nameADupA[8];
-	char nameADupB[8];
-	char smallString[8];
-	char bigString[8];
-};
-
-
-
-class StringClassB
-{
-public:
-	StringClassB();
-	StringClassB(int ba, int bb);
-
-
-
-private:
-
-	char ArrayB[7];
-	char nameB[8];
-	char nameBDupA[8];
-	char nameBDupB[8];
-	char smallString[8];
-	char bigString[8];
+	char name[32] = "String"; //Your class should only have one char array or char pointer.
+					//You will pass into your functions after string classes in order to interact with the correct instance
 };
 
 
