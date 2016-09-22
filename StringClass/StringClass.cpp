@@ -5,40 +5,61 @@
 
 //Prototype your functions...
 
+
+StringClassA::StringClassA()
+{
+	int search;
+	char ArrayA[] = "sample";
+	char *ArrayAAcess[sizeof(ArrayA)]; 
+	for (search = 0; search < sizeof(ArrayA); search++)
+		ArrayAAcess[search] = &ArrayA[search];
+	char nameA[] = "StringA";
+	char nameADupA[] = "Dup";
+	char nameADupB[] = "Dup2";
+	char smallString[] = "stringa";
+	char bigString[] = "STRINGA";
+}
+
+StringClassB::StringClassB()
+{
+	char ArrayB[] = "sample";
+	char nameB[] = "StringB";
+	char nameBDupA[] = "Dup";
+	char nameBDupB[] = "Dup2";
+	char smallString[] = "stringb";
+	char bigString[] = "STRINGB";
+}
 // how to properly get char information into the main function without problems
 int main()
 {
-	StringClassA stringclassa = StringClassA ('a', 'b');
-	StringClassB stringclassb = StringClassB('c', 'd');
-	
+	StringClassA stringclassa = StringClassA (1, 2);
+	StringClassB stringclassb = StringClassB(3, 4);
+	stringclassa.ArrayCount;
 
 	system("pause");
 	return 1;
 }
 
-StringClassA::StringClassA(char aa, char ab) //Function fors String class A
+StringClassA::StringClassA(int aa, int ab) //Function for String class A
 {
-	ArrayA[7] = aa;
-	nameA[8] = ab;
-	nameADupA[8];
-	nameADupB[8];
+	ArrayA;
+	nameA;
 }
 
 
 
-StringClassB::StringClassB(char ba, char bb) //Function for string class B
+StringClassB::StringClassB(int ba, int bb) //Function for string class B
 {
 
-	ArrayB[7] = ba;
-	nameB[8] = bb;
-	nameBDupA[8];
-	nameBDupB[8];
+	ArrayB;
+	nameB;
 }
 
 
 void StringClassA::ArrayCount() //string length
 {
-	strlen(ArrayA);
+	std::cout << strlen(ArrayA);
+
 }
 
 

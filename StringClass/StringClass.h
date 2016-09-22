@@ -7,7 +7,8 @@
 class StringClassA
 {
 public:
-	StringClassA(char aa, char ab);
+	StringClassA();
+	StringClassA(int aa, int ab);
 	void ArrayCount();
 	void CharIndex();
 	void DuplicateLowerCase();
@@ -30,18 +31,21 @@ private:
 class StringClassB
 {
 public:
-	StringClassB(char ba, char bb);
-	
+	StringClassB();
+	StringClassB(int ba, int bb);
+
+
 
 private:
 
-	char ArrayB[7] = "sample";
-	char nameB[8] = "StringB";
+	char ArrayB[7];
+	char nameB[8];
 	char nameBDupA[8];
 	char nameBDupB[8];
-	char smallString[8] = "stringa";
-	char bigString[8] = "STRINGA";
+	char smallString[8];
+	char bigString[8];
 };
+
 
 
 
