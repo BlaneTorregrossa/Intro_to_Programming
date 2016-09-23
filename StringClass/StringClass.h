@@ -10,14 +10,15 @@ class StringClass // Only one string class needed Will need to make multiple ins
 {
 public:
 	StringClass(int a);
-	int StringCounter(int Count);
-
-	
-
+	void StringCounter(int Count);
+	void StringCompare(int a, int b);
+	int SmallStringDuplicate(int sx, int sy);
+	int BigStringDuplicate(int bx, int by);
+	void StringAppending();
 
 private:
-	
-	char name[32] = "String"; //Your class should only have one char array or char pointer.
+
+	char name[32] = "Dummy"; //Your class should only have one char array or char pointer.
 					//You will pass into your functions after string classes in order to interact with the correct instance
 };
 
