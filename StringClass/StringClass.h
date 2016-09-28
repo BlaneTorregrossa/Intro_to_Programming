@@ -13,13 +13,14 @@ public:
 	int StringCounter(int c);
 	int StringIndexAccess(int ia);
 	int StringCompare(int ca, int cb);
-	int SmallStringDuplicate(int sx, int sy);
-	int BigStringDuplicate(int bx, int by);
-	void StringAppending();
+	int StringAppend(int saa);
+	int StringPrepend(int spa, int spb);
+	int StringSmallDuplicate(int sd);
+	int StringBigDuplicate(int bd);
 
 private:
 
-	char name[32] = "Dummy"; //Your class should only have one char array or char pointer.
+	char name[7] = "Dummy"; //Your class should only have one char array or char pointer.
 					//You will pass into your functions after string classes in order to interact with the correct instance
 };
 

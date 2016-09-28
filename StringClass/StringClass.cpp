@@ -7,127 +7,134 @@
 // You are not to use string functions C++ provides, such as strcmp, strlen, strcpy, etc., The purpose of the assesment is to mimic these functions.
 
 //Function for StringClass
-StringClass::StringClass(int N)
+StringClass::StringClass(int a)
 {
-	name[32] = N;
+	name[7];
 }
 
-
+//*
 //A function that determines the strings length and returns an interger.
 int StringClass::StringCounter(int c)
 {
 
-	name[32];
+	name[7];
 
-
-	for (c = 0; c < 6; c++)
+	for (c = 0; c < 7; c++)
 	{
 		char temp = name[c];
 		if (c == 6)
 		{
-			return c;
 			break;
 		}
 	}
+	return name[c];
 }
 
 
-
+//*
 //A funtion that accesses the second character in the string and returns it.
 int StringClass::StringIndexAccess(int ia)
 {
-	name[32];
+	name[7];
 
-	for (ia = 0; ia < 6; ia++)
+	for (ia = 0; ia < 7; ia++)
 	{
 		char temp = name[ia];
 		if (ia == 2)
 		{
-			return ia;
 			break;
 		}
 	}
+	return name[ia];
 }
 
-
-
+//*
+//This function is supposed to compare two strings together. Not sure if this is the right way for these to be compared though.
 int StringClass::StringCompare(int ca, int cb)
 {
-	name[32];
-	char tempForComparisonA = name[32];
-	char tempForCmoparisonB = name[32];
-	ca = tempForComparisonA;
-	cb = tempForCmoparisonB;
-	if (ca == cb)
+	name[7];
+	char tempForComparisonA = name[ca];
+	char tempForComparisonB = name[cb];
+	if (tempForComparisonA == tempForComparisonB)
 	{
-		ca = name[32];
+		ca = name[7];
 	}
-	if (cb != ca)
+	if (tempForComparisonB != tempForComparisonA)
 	{
-		cb = name[32];
+		cb = name[7];
 	}
+	return ca;
+	return cb;
 }
 
-
-
-int StringClass::SmallStringDuplicate(int sx, int sy)
+//*
+//This function is supposed to append one string to the end of another. Not sure if the string is even appended.
+int StringClass::StringAppend(int saa)
 {
-	name[32];
-	char nameDup[32] = "dummy";
-	char tempForSmallLetters = nameDup[32];
-	char tempForNormalLettersA = name[32];
-	int lettersX = tempForNormalLettersA;
-	int lettersY = tempForSmallLetters;
-	int lettersTemp;
-	int swap = 1;
-	while (swap == 1)
+	name[7];
+	char nameDup[7] = "Extra";
+	char nameNew[14];
+	if (saa == 1) // Try using Loops.
 	{
-		lettersTemp = lettersY;
-		lettersY = lettersX;
-		lettersX = lettersTemp;
+
 	}
-	return name[32];
+	return nameNew[14];
 }
 
-
-int StringClass::BigStringDuplicate(int bx, int by)
+//*
+//This function is supposed to prepend the string duplicate to the original string. Not sure how to get one string to be placed before the other.
+int StringClass::StringPrepend(int spa, int spb)
 {
-	name[32];
-	char nameDup[32] = "DUMMY";
-	char tempForBigLetters = nameDup[32];
-	char tempForNormalLetters = name[32];
-	int lettersX = tempForNormalLetters;
-	int lettersY = tempForBigLetters;
-	int lettersTemp;
-	int swap = 2;
-	while (swap == 2)
+	name[7];
+	char nameDup[7];
+	for (spa = 0; spa < 7; spa++)
 	{
-		lettersTemp = lettersY;
-		lettersY = lettersX;
-		lettersX = lettersTemp;
+		char tempa = name[spa];
+		if (spa == 7)
+		{
+			nameDup[7] = name[7];
+
+		}
 	}
-	return name[32];
+	return 0;
 }
 
-
-void StringClass::StringAppending()
+//*
+//This function converts the normal string to be like the duplicate in that the string now contains all lowercase letters.
+int StringClass::StringSmallDuplicate(int sd)
 {
-	name[32];
-	char nameAddition[32] = "ExtraWords";
-	char holderA = name[32];
-	char holderB = nameAddition[32];
-	int holderAA = holderA;
-	int holderBB = holderB;
-	int attach = 3;
-	while (attach == 3)
-	{
-		// holderAA + holderBB does not work as they do not contain modifiable values
 
+	name[7];
+	char nameSmallDup[7] = "dummy";
+	while (sd == 1)
+	{
+		name[7] = nameSmallDup[7];
+		break;
 	}
+	return name[7];
 }
+
+//*
+//This function converts the normal string to be like the duplicate in that the string now contains all uppercase letters.
+int StringClass::StringBigDuplicate(int bd)
+{
+	name[7];
+	char nameBigDup[7] = "DUMMY";
+	while (bd == 1)
+	{
+		name[7] = nameBigDup[7];
+		break;
+	}
+
+	return name[7];
+}
+
+
+
+
+
+
+
 
 
 //List questions and problems you do not understand.
-//Could a loop be used in the middle of an if statement.
-//How do I make the intergers for the function assign correctly.
-// Can not figure out why stringcounter is not working.
