@@ -53,7 +53,7 @@
 
 
 //Arrays 4
-//Description: Asks for five numbers and inputs them in reverse order.
+//Description: Asks for five numbers for input and puts them in reverse order.
 
 //#include <iostream>
 

@@ -13,35 +13,36 @@
 //		system("pause");
 //		return 0;
 //	}
-	
+
 //}
 
 //Conditional Statements Exercise 2
 //Description: Console asks for two numbers and displays which is the highest to the console unless they both are equal in value
 
-//#include <iostream>
-//int main()
-//{
-//	int a;
-//	int b;
-	
-//	std::cout << "Type two numbers" << std::endl;
-//	std::cin >> a >> b;
+ //#include <iostream>
+ //int main()
+ //{
+ //	int a;
+ //	int b;
 
-//	if (a > b)
-//	{
-//		std::cout << a << std::endl;
-//	}
-//	else if (a < b)
-//	{
+// 	std::cout << "Type two numbers" << std::endl;
+//	std::cin >> a >> b;
+//	system("cls");
+
+// 	if (a > b)
+// 	{
+// 		std::cout << a << std::endl;
+// 	}
+// 	else if (a < b)
+// 	{
 //		std::cout << b << std::endl;
-//	}
-//	else
-//	{
-//		std::cout << "Either both numbers were equal to each other or something went wrong" << std::endl;
-//	}
-//	system("pause");
-//	return 0;
+// 	}
+// 	else
+// 	{
+// 		std::cout << "Either both numbers were equal to each other or something went wrong" << std::endl;
+// 	}
+// 	system("pause");
+// 	return 0;
 //}
 
 
@@ -59,20 +60,54 @@
 //	int resultd;
 //	int resulte;
 //	int tmp;
-//	std::cin >> resulta, resultb, resultc, resultd, resulte;
-//		sum = resulta + resultb + resultc + resultd + resulte;
-//		if (sum < 0)
-//		{
-//			std::cout << i << std::endl;
-//		}
-//		if (sum > 0)
-//		{
-//			std::cout << i << std::endl;
-//		}
-//		if (sum == 0)
-//		{
-//			std::cout << resulta, resultb, resultc, resultd, resulte;
-//		}
+//	std::cout << "Please give us a small number..." << std::endl;
+//	std::cin >> resulta;
+//	std::cout << "Please give us a slightly bigger number..." << std::endl;
+//	std::cin >> resultb;
+//	if (resulta > resultb) 
+//	{
+//		std::cout << "Number is to big!";
+//		system("pause");
+//		return 0;
+//	}
+//	std::cout << "Please give us an even bigger number!" << std::endl;
+//	std::cin >> resultc;
+//	if (resultb > resultc)
+//	{
+//		std::cout << "Number is to big!";
+//		system("pause");
+//		return 0;
+//	}
+//	std::cout << "Please give us a huge number!" << std::endl;
+//	std::cin >> resultd;
+//	if (resultc > resultd)
+//	{
+//		std::cout << "Number is to big!";
+//		system("pause");
+//		return 0;
+//	}
+//	std::cout << "Plese give us one last number that is super big!!!" << std::endl;
+//	std::cin >> resulte;
+//	if (resultd > resulte)
+//	{
+//		std::cout << "Number is to big!";
+//		system("pause");
+//		return 0;
+//	}
+//	system("cls");
+//	sum = resulta + resultb + resultc + resultd + resulte;
+//	if (sum < 0)
+//	{
+//		std::cout << resulte << std::endl << resultd << std::endl << resultc << std::endl << resultb << std::endl << resulta << std::endl;
+//	}
+//	if (sum > 0)
+//	{
+//		std::cout << resulta << std::endl << resultb << std::endl << resultc << std::endl << resultd << std::endl << resulte << std::endl;
+//	}
+//	if (sum == 0)
+//	{
+//		std::cout << resulta << std::endl << resultb << std::endl << resultc << std::endl << resultd << std::endl << resulte << std::endl;
+//	}
 //	system("pause");
 //	return 0;
 //}
@@ -80,12 +115,13 @@
 
 //Conditinal Statements Exercise 4
 //Description: A switch statement that asks for a number and displays the number back as long as it is 1-4. If not any of these numbers than it displays invald.
+
 //#include <iostream>
 //int main()
 //{
 //	int value;
 //	std::cin >> value;
-	 
+
 //	switch (value)
 //	{
 //	case 1:
@@ -113,7 +149,7 @@
 //#include <iostream>
 //int main()
 //{
-//	int x;
+//	int x = 0;
 //	int y;
 
 //	y = (x == 0) ? 0 : 10;
@@ -127,35 +163,36 @@
 //{
 //	int numa;
 //	int numb;
-//	int numOperation;
-//	std::cout << "Please give two numbers.";
-//	std::cin >> numa >> numb;
-//	std::cout << "Pleae give us one of the following using 1-5(+, -, *, /, %).";
-//	std::cin >> numOperation;
+// 	int numOperation;
+// 	std::cout << "Please give two numbers.";
+// 	std::cin >> numa >> numb;
+// 	std::cout << "Pleae give us one of the following using 1-5(+, -, *, /, %).";
+// 	std::cin >> numOperation;
 
-//	switch (numOperation)
-//	{
-//	case 1:
-//		std::cout << numa + numb << std::endl;
+// 	switch (numOperation)
+// 	{
+// 	case 1:
+// 		std::cout << numa + numb << std::endl;
+// 		break;
+// 	case 2:
+// 		std::cout << numa - numb << std::endl;
+// 		break;
+// 	case 3:
+// 		std::cout << numa * numb << std::endl;
+// 		break;
+// 	case 4:
+// 		std::cout << numa / numb << std::endl;
+// 		break;
+// 	case 5:
+// 		std::cout << numa % numb << std::endl;
+// 		break;
+// 	default:
+// 		std::cout << "Mistakes were made to bring you these words." << std::endl;
 //		break;
-//	case 2:
-//		std::cout << numa - numb << std::endl;
-//		break;
-//	case 3:
-//		std::cout << numa * numb << std::endl;
-//		break;
-//	case 4:
-//		std::cout << numa / numb << std::endl;
-//		break;
-//	case 5:
-//		std::cout << numa % numb << std::endl;
-//		break;
-//	default:
-//		std::cout << "Mistakes were made to bring you these words." << std::endl;
-//	}
-//	system("pause");
-//	return 0;
-//}
+// 	}
+// 	system("pause");
+// 	return 0;
+// }
 
 //Conditional Statements Exercise 7
 //Description: Switch statement that outputs how many days in a moth when given a number representing a month. If a value higher than 12 is given an error message is displayed.

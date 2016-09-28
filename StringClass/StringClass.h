@@ -10,8 +10,9 @@ class StringClass // Only one string class needed Will need to make multiple ins
 {
 public:
 	StringClass(int a);
-	void StringCounter(int Count);
-	void StringCompare(int a, int b);
+	int StringCounter(int c);
+	int StringIndexAccess(int ia);
+	int StringCompare(int ca, int cb);
 	int SmallStringDuplicate(int sx, int sy);
 	int BigStringDuplicate(int bx, int by);
 	void StringAppending();

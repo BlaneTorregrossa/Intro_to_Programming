@@ -6,48 +6,65 @@
 
 // You are not to use string functions C++ provides, such as strcmp, strlen, strcpy, etc., The purpose of the assesment is to mimic these functions.
 
-
+//Function for StringClass
 StringClass::StringClass(int N)
 {
 	name[32] = N;
 }
 
 
-//At first wouldn't accept int as working until I retyped it. Not sure about what caused this to happen.
-void StringClass::StringCounter(int Count)
+//A function that determines the strings length and returns an interger.
+int StringClass::StringCounter(int c)
 {
 
 	name[32];
-	int iz = 0;
 
-	for (int i = 0; i < 6; iz)
+
+	for (c = 0; c < 6; c++)
 	{
-		char temp = name[i];
-		name[i] = name[i++];
-		name[i++] = temp;
-
-
-
+		char temp = name[c];
+		if (c == 6)
+		{
+			return c;
+			break;
+		}
 	}
-
-
 }
 
 
-void StringClass::StringCompare(int a, int b)
+
+//A funtion that accesses the second character in the string and returns it.
+int StringClass::StringIndexAccess(int ia)
+{
+	name[32];
+
+	for (ia = 0; ia < 6; ia++)
+	{
+		char temp = name[ia];
+		if (ia == 2)
+		{
+			return ia;
+			break;
+		}
+	}
+}
+
+
+
+int StringClass::StringCompare(int ca, int cb)
 {
 	name[32];
 	char tempForComparisonA = name[32];
 	char tempForCmoparisonB = name[32];
-	int compA = tempForComparisonA;
-	int compB = tempForCmoparisonB;
-	if (compA == compB)
+	ca = tempForComparisonA;
+	cb = tempForCmoparisonB;
+	if (ca == cb)
 	{
-		compA = name[32];
+		ca = name[32];
 	}
-	if (compA != compB)
+	if (cb != ca)
 	{
-		compB = name[32];
+		cb = name[32];
 	}
 }
 
@@ -105,7 +122,7 @@ void StringClass::StringAppending()
 	while (attach == 3)
 	{
 		// holderAA + holderBB does not work as they do not contain modifiable values
-		
+
 	}
 }
 
