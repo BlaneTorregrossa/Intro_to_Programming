@@ -8,21 +8,27 @@
 
 class StringClass // Only one string class needed Will need to make multiple instances of this class.
 {
-public:
-	StringClass(int a);
-	int StringCounter(int c);
-	int StringIndexAccess(int ia);
-	int StringCompare(int ca, int cb);
-	int StringAppend(int saa);
-	int StringPrepend(int spa, int spb);
-	int StringSmallDuplicate(int sd);
-	int StringBigDuplicate(int bd);
-
 private:
+	char m_Data[255]; // Best left at 255. DO NOT CHANGE!
+	int m_Size; // Do not set what this is equal up here!
 
-	char name[7] = "Dummy"; //Your class should only have one char array or char pointer.
-					//You will pass into your functions after string classes in order to interact with the correct instance
+
+public:
+	StringClass();
+	
+	StringClass(char w[]);
+
+	int Length();
+
+	int Compare(char c[], int ci);
+
+	
+
 };
+
+	 //Your class should only have one char array or char pointer.
+	//You will pass into your functions after string classes in order to interact with the correct instance
+
 
 
 

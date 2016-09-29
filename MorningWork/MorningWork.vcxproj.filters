@@ -18,6 +18,9 @@
     <ClCompile Include="MorningWork.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MorningWorkMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MorngingWork.h">

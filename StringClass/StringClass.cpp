@@ -7,133 +7,39 @@
 // You are not to use string functions C++ provides, such as strcmp, strlen, strcpy, etc., The purpose of the assesment is to mimic these functions.
 
 //Function for StringClass
-StringClass::StringClass(int a)
+
+
+StringClass::StringClass() {}
+
+StringClass::StringClass(char w[])
 {
-	name[7];
+	m_Size = 0; //Parts like this is where you would assign this.
+	while (w[m_Size] != '\0') //Activates loop while StringSize is not null 
+	{
+		m_Data[m_Size] = w[m_Size];
+		m_Size++; // Increases array size
+	}
+	m_Data[m_Size] = '\0';
 }
 
-//*
-//A function that determines the strings length and returns an interger.
-int StringClass::StringCounter(int c)
+int StringClass::Length()
 {
-
-	name[7];
-
-	for (c = 0; c < 7; c++)
-	{
-		char temp = name[c];
-		if (c == 6)
-		{
-			break;
-		}
-	}
-	return name[c];
-}
-
-
-//*
-//A funtion that accesses the second character in the string and returns it.
-int StringClass::StringIndexAccess(int ia)
-{
-	name[7];
-
-	for (ia = 0; ia < 7; ia++)
-	{
-		char temp = name[ia];
-		if (ia == 2)
-		{
-			break;
-		}
-	}
-	return name[ia];
-}
-
-//*
-//This function is supposed to compare two strings together. Not sure if this is the right way for these to be compared though.
-int StringClass::StringCompare(int ca, int cb)
-{
-	name[7];
-	char tempForComparisonA = name[ca];
-	char tempForComparisonB = name[cb];
-	if (tempForComparisonA == tempForComparisonB)
-	{
-		ca = name[7];
-	}
-	if (tempForComparisonB != tempForComparisonA)
-	{
-		cb = name[7];
-	}
-	return ca;
-	return cb;
-}
-
-//*
-//This function is supposed to append one string to the end of another. Not sure if the string is even appended.
-int StringClass::StringAppend(int saa)
-{
-	name[7];
-	char nameDup[7] = "Extra";
-	char nameNew[14];
-	if (saa == 1) // Try using Loops.
-	{
-
-	}
-	return nameNew[14];
-}
-
-//*
-//This function is supposed to prepend the string duplicate to the original string. Not sure how to get one string to be placed before the other.
-int StringClass::StringPrepend(int spa, int spb)
-{
-	name[7];
-	char nameDup[7];
-	for (spa = 0; spa < 7; spa++)
-	{
-		char tempa = name[spa];
-		if (spa == 7)
-		{
-			nameDup[7] = name[7];
-
-		}
-	}
-	return 0;
-}
-
-//*
-//This function converts the normal string to be like the duplicate in that the string now contains all lowercase letters.
-int StringClass::StringSmallDuplicate(int sd)
-{
-
-	name[7];
-	char nameSmallDup[7] = "dummy";
-	while (sd == 1)
-	{
-		name[7] = nameSmallDup[7];
-		break;
-	}
-	return name[7];
-}
-
-//*
-//This function converts the normal string to be like the duplicate in that the string now contains all uppercase letters.
-int StringClass::StringBigDuplicate(int bd)
-{
-	name[7];
-	char nameBigDup[7] = "DUMMY";
-	while (bd == 1)
-	{
-		name[7] = nameBigDup[7];
-		break;
-	}
-
-	return name[7];
+	return m_Size;
 }
 
 
 
+// Has to use a loop to check arrays both at the SAME time and break when they are no longer the same.
+int StringClass::Compare(char c[], int ci)
+{
+	c[m_Size];
+	m_Data[m_Size];
+	while (c[m_Size] == m_Data[m_Size])
+	{
+		++m_Size;
 
-
-
+	}
+}
 
 
 

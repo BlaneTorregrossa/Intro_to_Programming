@@ -1,34 +1,17 @@
 #include <iostream>
+#include "MorngingWork.h"
 
-
-int morningWork();
-
-
-
-
-int morningWork()
+class Cat
 {
-	int morningArray[5]{ 2, 10, 4, 8, 6 };
-	int tempa = 0;
-	int tempb = 0;
-	int sum;
-	while (tempa < 10)
+private:
+	char m_Name;
+public:
+	Cat() {}
+	void NameMe(char n)
 	{
-		tempa = morningArray[10];
-		if (tempa >= 10)
-		{
-			return tempa;
-		}
+		m_Name = n;
 	}
-	while (tempb < 10)
-	{
-		tempb = morningArray[10];
-		if (tempb > 8)
-		{
-			return tempb;
-		}
-	}
+};
 
-	tempa + tempb = sum;
 
-}
+
