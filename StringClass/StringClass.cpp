@@ -55,10 +55,8 @@ int StringClass::Append(StringClass a) // Function is suppossed to append two st
 			m_Data[iz++];
 		if (iz == 8)
 			return a.m_Data[iz];
-		else
-			return a.m_Data[iz];
 	}
-
+	return a.m_Data;
 }
 
 
