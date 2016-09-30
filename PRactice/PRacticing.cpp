@@ -3,7 +3,7 @@
 
 int main()
 {
-	StringClass String = StringClass(0);
+	StringClass String; //Something like StringClass String = StringClass(0); does not work.
 	String.nameAccess;
 	system("pause");
 }

@@ -15,19 +15,19 @@ private:
 
 public:
 	StringClass();
-	
+
 	StringClass(char w[]);
 
 	int Length();
 
-	int Compare(char c[], int ci);
+	bool Compare(StringClass c);
 
-	
+	int Append(StringClass a);
 
 };
 
-	 //Your class should only have one char array or char pointer.
-	//You will pass into your functions after string classes in order to interact with the correct instance
+//Your class should only have one char array or char pointer.
+//You will pass into your functions after string classes in order to interact with the correct instance
 
 
 

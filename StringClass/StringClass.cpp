@@ -6,11 +6,13 @@
 
 // You are not to use string functions C++ provides, such as strcmp, strlen, strcpy, etc., The purpose of the assesment is to mimic these functions.
 
-//Function for StringClass
+// Figure out problem with m_Size!!! This issue is preventing evreything else from running properly!!!
+
 
 
 StringClass::StringClass() {}
 
+// Function for Sting Class
 StringClass::StringClass(char w[])
 {
 	m_Size = 0; //Parts like this is where you would assign this.
@@ -22,25 +24,44 @@ StringClass::StringClass(char w[])
 	m_Data[m_Size] = '\0';
 }
 
+// Function for the Length of the string
 int StringClass::Length()
 {
 	return m_Size;
 }
 
 
-
-// Has to use a loop to check arrays both at the SAME time and break when they are no longer the same.
-int StringClass::Compare(char c[], int ci)
+// Function for comparing a string with the string class.
+bool StringClass::Compare(StringClass c) // This function compares both strings to see if they are the same length. If they are, then the function compares if the strings have the same characters. If they do then it returns true. If the strings are different in length or the characters stored then false is returned.
 {
-	c[m_Size];
-	m_Data[m_Size];
-	while (c[m_Size] == m_Data[m_Size])
+	if (Length() != c.Length()) // Checks if the strings are both the same length. If they aren't it returns false. If they are it continues to the loop that follows.
+		return false;
+	for (int i = 0; i < m_Size; i++)
 	{
-		++m_Size;
-
+		if (m_Data[i] != c.m_Data[i]) // Checks if the strings contain the same varibles. If they are the same the return is set to true while if they are not the same the return is set to false.
+			return false;
 	}
+	return true;
+}
+
+// Function that needs looking at...
+int StringClass::Append(StringClass a) // Function is suppossed to append two strings together.
+{
+	for (int iz = 0; iz < m_Size; iz++)
+	{
+		if (m_Data[iz] == a.m_Data[iz])
+			a.m_Data[iz++];
+		else if (m_Data[iz] != a.m_Data[iz])
+			m_Data[iz++];
+		if (iz == 8)
+			return a.m_Data[iz];
+		else
+			return a.m_Data[iz];
+	}
+
 }
 
 
-
 //List questions and problems you do not understand.
+// m_size is not working correctly and is just staying there. Not sure what is causing the issue.
+// Still trying to figure out how to properly get the append function to work as the way I currenty have it is wrong.
