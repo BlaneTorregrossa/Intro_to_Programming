@@ -1,8 +1,7 @@
-//Comment what all this means...
+#pragma once //Use this for header files.
+//Do not put #include <iostream> here.
 
-#ifndef _StringClass_H_
-#define _StringClass_H_
-#include <iostream>
+
 // This is where the prototyping of funtions happens...
 
 
@@ -32,5 +31,3 @@ public:
 
 
 
-
-#endif

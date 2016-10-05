@@ -4,12 +4,12 @@
 
 int main()
 {
-	StringClass sc; //Proper way for this to work instead of StringClass String = StringClass(0);
+	StringClass sc("Testa"); //Proper way for this to work instead of StringClass String = StringClass(0);
 
 
 	sc.Length();
-	sc.Compare("Test");
-	sc.Append("Test");
+	sc.Compare("Testa");
+	sc.Append("ThisIsA");
 	return 1;
 }
 

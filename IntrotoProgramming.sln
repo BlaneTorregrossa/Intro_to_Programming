@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IntrotoProgramming", "IntrotoProgramming\IntrotoProgramming.vcxproj", "{901E6377-F83A-407B-95BB-4435F22374F3}"
 EndProject
@@ -34,6 +34,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Memory", "Memory\Memory.vcxproj", "{7C9F9700-E996-4454-81AF-859847E8A272}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PRactice", "PRactice\PRactice.vcxproj", "{D388D54C-81EC-4A75-BA57-55A6E1FEEF17}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1", "Project1\Project1.vcxproj", "{139B6B1E-F061-468D-84EB-4B85460C96B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,14 @@ Global
 		{D388D54C-81EC-4A75-BA57-55A6E1FEEF17}.Release|x64.Build.0 = Release|x64
 		{D388D54C-81EC-4A75-BA57-55A6E1FEEF17}.Release|x86.ActiveCfg = Release|Win32
 		{D388D54C-81EC-4A75-BA57-55A6E1FEEF17}.Release|x86.Build.0 = Release|Win32
+		{139B6B1E-F061-468D-84EB-4B85460C96B6}.Debug|x64.ActiveCfg = Debug|x64
+		{139B6B1E-F061-468D-84EB-4B85460C96B6}.Debug|x64.Build.0 = Debug|x64
+		{139B6B1E-F061-468D-84EB-4B85460C96B6}.Debug|x86.ActiveCfg = Debug|Win32
+		{139B6B1E-F061-468D-84EB-4B85460C96B6}.Debug|x86.Build.0 = Debug|Win32
+		{139B6B1E-F061-468D-84EB-4B85460C96B6}.Release|x64.ActiveCfg = Release|x64
+		{139B6B1E-F061-468D-84EB-4B85460C96B6}.Release|x64.Build.0 = Release|x64
+		{139B6B1E-F061-468D-84EB-4B85460C96B6}.Release|x86.ActiveCfg = Release|Win32
+		{139B6B1E-F061-468D-84EB-4B85460C96B6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
