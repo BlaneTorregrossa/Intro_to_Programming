@@ -13,16 +13,25 @@ private:
 
 
 public:
-	StringClass();
+	StringClass() {};
 
-	StringClass(char w[]);
+	StringClass(char string[])
+	{
+		for (int i = 0; i < 255; i++)
+		{
+			m_Data[i] = string[i];
+		}
+	}
 
 	int Length();
 
+	char CharacterAccess(int i);
+
 	bool Compare(StringClass c);
 
-	int Append(StringClass a);
+	char* Append(StringClass a);
 
+	char* Prepend(StringClass p);
 };
 
 //Your class should only have one char array or char pointer.

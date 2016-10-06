@@ -8,27 +8,39 @@
 
 // You are not to use string functions C++ provides, such as strcmp, strlen, strcpy, etc., The purpose of the assesment is to mimic these functions.
 
+//
+//StringClass::StringClass() {}
 
-StringClass::StringClass() {}
 
-
-StringClass::StringClass(char w[]) //Function for String Class
-{
-	m_Size = 0; //Giving the array size a value.
-	while (w[m_Size] != '\0') //Activates loop while StringSize is not set to null. 
-	{
-		m_Data[m_Size] = w[m_Size]; // assigns one string's size to be the same as another.
-		m_Size++; // Increases array size
-	}
-	m_Data[m_Size] = '\0';
-}
+//StringClass::StringClass(char w[]) //Function for String Class
+//{
+//	m_Size = 0; //Giving the array size a value.
+//	while (w[m_Size] != '\0') //Activates loop while StringSize is not set to null. 
+//	{
+//		m_Data[m_Size] = w[m_Size]; // assigns one string's size to be the same as another.
+//		m_Size++; // Increases array size
+//	}
+//	m_Data[m_Size] = '\0';
+//}
 
 // Function for the Length of the string
 int StringClass::Length()
 {
-	return m_Size; // Returns the size of a string that was defined in the previous function.
+	int i = 0;
+	while (m_Data[i] != 0)
+	{
+		i++;
+	}
+
+
+	return i; // Returns the size of a string that was defined in the previous function.
 }
 
+//Accesses a chosen character in a string
+char StringClass::CharacterAccess(int i)
+{
+	return m_Data[i];
+}
 
 // Function for comparing a string with the string class.
 bool StringClass::Compare(StringClass c) //This function compares both strings to see if they are the same length. If they are, then the function compares if the strings have the same characters. If they do then it returns true. If the strings are different in length or the characters stored then false is returned.
@@ -44,21 +56,41 @@ bool StringClass::Compare(StringClass c) //This function compares both strings t
 }
 
 //Places one string after another string
-int StringClass::Append(StringClass a) //Problem 1
+char* StringClass::Append(StringClass a) 
 {
-	char appendTemp; // Needs to be an array.
-	while (a.m_Data[m_Size] != '/0')
-	{
-		appendTemp = m_Data[m_Size] + a.m_Data[m_Size];  //This does not work! This needs to properly append. 
+	int l = Length();
+	int t = 0;
+	while (a.m_Data[t] != 0) 
+	{	
+		m_Data[l] = a.m_Data[t];
+		l++;
+		t++;
 	}
-	return appendTemp;
+	m_Data[l] = '\0';
+	return m_Data;
+}
+
+
+char* StringClass::Prepend(StringClass p) 
+{
+	int l = Length();
+	int t = 0;
+	while (p.m_Data[t] != 0)
+	{
+		m_Data[l] = p.m_Data[t];
+		++t;
+		l++;
+	}
+	m_Data[t] = '\0';
+	return m_Data;
 }
 
 
 
-
 /*
-Problem 1: Under a while loop I am trying to increase the size of the string to then combine both strings together.
+
+
+
 
 
 */
