@@ -19,10 +19,13 @@ int main()
 
 	 firststring.CharacterAccess(0)  ; // Accesses first character in the FirstString
 	 firststring.Compare(secondstring)  ; // Compares length and characters of the firststring and the secondstring
-	 firststring.Append(secondstring)  ; // Appends the secondstring to the firststring
+	    // Appends the secondstring to the firststring
+	 std::cout << "print firststring append to secondstring "<< firststring.Append(secondstring).ReturnCStyle() <<"\n";
 	 secondstring.Prepend(firststring)  ; // Prepends the firststring to the secondstring
-	 firststring.ReturnCStyle  ; 
+	 std::cout<<"print first string as c style string "<<firststring.ReturnCStyle()<<"\n";
 	system("pause");
+	
+	return 0;
 }
 
 

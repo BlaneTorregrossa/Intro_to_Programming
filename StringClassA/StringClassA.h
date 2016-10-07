@@ -1,11 +1,13 @@
-#pragma once //Use this for header files.
+
+#pragma once 
+//Use this for header files.
 //Do not put #include <iostream> here.
 
 
 // This is where the prototyping of funtions happens...
 
 
-class StringClass 
+class StringClass
 {
 private:
 	char m_Data[255]; // Best left at 255. DO NOT CHANGE!
@@ -29,7 +31,7 @@ public:
 
 	bool Compare(StringClass c);
 
-	StringClass Append(StringClass a);
+	char Append(StringClass a);
 
 	char Prepend(StringClass p);
 

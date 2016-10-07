@@ -1,7 +1,7 @@
 //This is where all your functions go.
 // Do not overthink this stuff.
 
-#include "StringClass.h"
+#include "StringClassA.h"
 #include <iostream>
 
 // You are not to use string functions C++ provides, such as strcmp, strlen, strcpy, etc., The purpose of the assesment is to mimic these functions.
@@ -54,23 +54,22 @@ bool StringClass::Compare(StringClass c) //This function compares both strings t
 }
 
 //Places one string after another string
-StringClass StringClass::Append(StringClass a) 
+char StringClass::Append(StringClass a)
 {
 	int l = Length();
 	int t = 0;
-	while (a.m_Data[t] != 0) 
-	{	
+	while (a.m_Data[t] != 0)
+	{
 		m_Data[l] = a.m_Data[t];
 		l++;
 		t++;
 	}
 	m_Data[l] = '\0';
-	StringClass sc = StringClass(m_Data);
-	return sc;
+	return m_Data[l];
 }
 
 //Places one string before another string
-char StringClass::Prepend(StringClass p) 
+char StringClass::Prepend(StringClass p)
 {
 	int l = Length();
 	int t = 0;
