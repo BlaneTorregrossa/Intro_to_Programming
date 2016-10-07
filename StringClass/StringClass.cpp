@@ -4,13 +4,11 @@
 #include "StringClass.h"
 #include <iostream>
 
-// Note that all the stuff that is collapsed works an should not be changed.
-
 // You are not to use string functions C++ provides, such as strcmp, strlen, strcpy, etc., The purpose of the assesment is to mimic these functions.
 
-//
-//StringClass::StringClass() {}
 
+
+//StringClass::StringClass() {}
 
 //StringClass::StringClass(char w[]) //Function for String Class
 //{
@@ -33,7 +31,7 @@ int StringClass::Length()
 	}
 
 
-	return i; // Returns the size of a string that was defined in the previous function.
+	return i;
 }
 
 //Accesses a chosen character in a string
@@ -56,7 +54,7 @@ bool StringClass::Compare(StringClass c) //This function compares both strings t
 }
 
 //Places one string after another string
-char* StringClass::Append(StringClass a) 
+char StringClass::Append(StringClass a) 
 {
 	int l = Length();
 	int t = 0;
@@ -67,11 +65,11 @@ char* StringClass::Append(StringClass a)
 		t++;
 	}
 	m_Data[l] = '\0';
-	return m_Data;
+	return m_Data[l];
 }
 
-
-char* StringClass::Prepend(StringClass p) 
+//Places one string before another string
+char StringClass::Prepend(StringClass p) 
 {
 	int l = Length();
 	int t = 0;
@@ -82,15 +80,22 @@ char* StringClass::Prepend(StringClass p)
 		l++;
 	}
 	m_Data[t] = '\0';
-	return m_Data;
+	return m_Data[l];
+}
+
+
+//Returns a string as a basic C-Style string.
+const char* StringClass::ReturnCStyle()
+{
+	const char* newData = m_Data;
+	return newData;
 }
 
 
 
 /*
 
-
-
-
+Properlly comment all of this stuff!
+NO Pointers on appending or prepending
 
 */
