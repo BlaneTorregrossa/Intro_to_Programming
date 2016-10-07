@@ -54,12 +54,12 @@ bool StringClass::Compare(StringClass c) //This function compares both strings t
 }
 
 //Places one string after another string
-StringClass StringClass::Append(StringClass a) 
+StringClass StringClass::Append(StringClass a)
 {
 	int l = Length();
 	int t = 0;
-	while (a.m_Data[t] != 0) 
-	{	
+	while (a.m_Data[t] != 0)
+	{
 		m_Data[l] = a.m_Data[t];
 		l++;
 		t++;
@@ -70,7 +70,7 @@ StringClass StringClass::Append(StringClass a)
 }
 
 //Places one string before another string
-char StringClass::Prepend(StringClass p) 
+StringClass StringClass::Prepend(StringClass p)
 {
 	int l = Length();
 	int t = 0;
@@ -81,7 +81,8 @@ char StringClass::Prepend(StringClass p)
 		l++;
 	}
 	m_Data[t] = '\0';
-	return m_Data[l];
+	StringClass sc = StringClass(m_Data);
+	return sc;
 }
 
 
@@ -92,11 +93,25 @@ const char* StringClass::ReturnCStyle()
 	return newData;
 }
 
-
+StringClass StringClass::SmallCharacters(StringClass s)
+{
+	int l = Length();
+	int a = 0;
+	while (s.m_Data != 0)
+	{
+		m_Data[l] = s.m_Data[a]; // Find a way to remove the letters that the string already has.
+		l++;
+		a++;
+		if (a >= 8)
+			break;
+	}
+	m_Data[l] = '/0';
+	StringClass sc = StringClass(m_Data);
+	return sc;
+}
 
 /*
 
-Properlly comment all of this stuff!
-NO Pointers on appending or prepending
+Make sure comments explain what evreything does.
 
 */

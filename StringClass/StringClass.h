@@ -31,9 +31,11 @@ public:
 
 	StringClass Append(StringClass a);
 
-	char Prepend(StringClass p);
+	StringClass Prepend(StringClass p);
 
 	const char* ReturnCStyle();
+
+	StringClass SmallCharacters(StringClass s);
 };
 
 
