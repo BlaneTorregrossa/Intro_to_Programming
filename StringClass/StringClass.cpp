@@ -8,18 +8,7 @@
 
 
 
-//StringClass::StringClass() {}
 
-//StringClass::StringClass(char w[]) //Function for String Class
-//{
-//	m_Size = 0; //Giving the array size a value.
-//	while (w[m_Size] != '\0') //Activates loop while StringSize is not set to null. 
-//	{
-//		m_Data[m_Size] = w[m_Size]; // assigns one string's size to be the same as another.
-//		m_Size++; // Increases array size
-//	}
-//	m_Data[m_Size] = '\0';
-//}
 
 // Function for the Length of the string
 int StringClass::Length()
@@ -100,10 +89,15 @@ StringClass StringClass::SmallCharacters(StringClass s)
 	while (s.m_Data != 0)
 	{
 		m_Data[l] = s.m_Data[a]; // Find a way to remove the letters that the string already has.
-		l++;
-		a++;
-		if (a >= 8)
-			break;
+		l--;
+		if (l < 1)
+			while (a != 8)
+			{
+				l++;
+				a++;
+				if (a = 8)
+					break;
+			}
 	}
 	m_Data[l] = '/0';
 	StringClass sc = StringClass(m_Data);
