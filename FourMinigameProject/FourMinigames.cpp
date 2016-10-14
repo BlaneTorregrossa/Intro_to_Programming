@@ -2,16 +2,6 @@
 #include <time.h>
 #include <string>
 
-class Application
-{
-	virtual void start() = 0;
-	void run;
-	Application();
-	virtual void update() = 0;
-protected:
-	bool gameover;
-};
-
 
 int main()
 {
@@ -126,16 +116,5 @@ int main()
 		//  }
 		//  system("pause");
 		//  return 1;
-	}
-}
-
-Application() {
-
-
-}
-
-Run() {
-	while (!gameover) {
-		update();
 	}
 }
